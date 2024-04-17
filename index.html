@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM MANIPULATION WITH FORM</title>
+
+
+
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="title">DOM Manipulation with Forms</h1>
+        <p id="description" class="capitalize" >
+        The details entered in the form would be displayed in table below
+        </p>
+
+        <div id="container">
+            <form id="form">
+                <div class="form-group">
+                <label>FirstName</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        placeholder="First Name"
+                        required="required"
+                    />
+                </div>
+                <br>
+                <div class="form-group">
+                <label>LastName</label>
+                <input type="text" 
+                        id="last-name" 
+                        placeholder="Last Name" 
+                        required="required"
+                    />
+                </div>
+                <br>
+                <div class="form-group">
+                <label>Address</label>
+                    <textarea type="text"
+                            id="address"
+                            placeholder="Address"
+                            required="required"
+                        >
+                    </textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                <label>Pincode</label>
+                <input type="text" 
+                        id="pincode" 
+                        placeholder="pincode" 
+                        required="required"
+                    />
+                </div>
+                <br>
+                <div class="radio">
+                <label>Select Gender</label><br>
+                <input type="radio" 
+                        id="gendermale" 
+                        name="gender" 
+                        value="Male" 
+                    />
+                <label>Male</label> 
+                <br>
+                <input type="radio"
+                        id="genderfemale"
+                        name="gender"
+                        value="Female"
+                    />
+                    <label>Female</label>
+                </div>
+                <br>
+                <div class="check">
+                
+                    <label>Food Choice</label><br>
+                    <input type="checkbox" id="Biriyani" name="food" value="Biriyani"/>
+                    <label for="Biriyani">Biriyani</label><br>
+                    <input type="checkbox" id="Parota" name="food" value="Parota"/>
+                    <label for="Parota">Parota</label><br>
+                    <input type="checkbox" id="Dosa" name="food" value="Dosa"/>
+                    <label for="Dosa">Dosa</label><br>
+                    <input type="checkbox" id="Idly" name="food" value="Idly">
+                    <label for="Idly">Idly</label><br>
+                    <input type="checkbox" id="Maggie" name="food" value="Maggie">
+                    <label for="Maggie">Maggie</label><br>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" 
+                        id="state-name" 
+                        placeholder="Ex:TamilNadu" 
+                        required="required"
+                    />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Country</label>
+                    <input type="text" 
+                        id="Country-name" 
+                        placeholder="Ex:India" 
+                        required="required"
+                    />
+                </div>
+                <br>
+                <br>
+                <button class="btn btn-primary"
+                type="button"
+                id="submit"
+                value="submit"
+                >
+                Submit
+                </button>
+            </form>
+        </div>
+        <br>
+
+        <div>
+       <table class="table"st>
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food Choice</th>
+                <th>Country</th>
+                <th>State</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+        
+    </body>
+</html>
